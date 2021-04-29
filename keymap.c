@@ -79,7 +79,7 @@ enum workspace_codes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [QWERTY] = LAYOUT_moonlander(
-    KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_TRANSPARENT,                                 TO(4),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,               KC_DELETE,
+    KC_TRANSPARENT, KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           KC_CAPSLOCK,                                    TO(4),          KC_6,           KC_7,           KC_8,           KC_9,           KC_0,               KC_DELETE,
     KC_TAB,         KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_Y,           KC_U,           KC_I,           KC_O,           KC_P,               SE_AA,
     KC_ESCAPE,      LGUI_T(KC_A),   LALT_T(KC_S),   LSFT_T(KC_D),   LCTL_T(KC_F),   LT(1, KC_G),    MO(2),                                          MO(2),          LT(1, KC_H),    RCTL_T(KC_J),   RSFT_T(KC_K),   LALT_T(KC_L),   RGUI_T(SE_OSLH),    SE_ADIA,
     KC_NO,          KC_Z,           KC_X,           KC_C,           KC_V,           KC_B,                                                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         SE_MINS,            KC_NO,
