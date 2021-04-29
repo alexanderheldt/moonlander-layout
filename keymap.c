@@ -58,17 +58,17 @@ enum custom_keycodes {
 };
 
 
-enum tap_dance_codes {
-  USE_OR_MOVE_TO_WORKSPACE_1,
-  USE_OR_MOVE_TO_WORKSPACE_2,
-  USE_OR_MOVE_TO_WORKSPACE_3,
-  USE_OR_MOVE_TO_WORKSPACE_4,
-  USE_OR_MOVE_TO_WORKSPACE_5,
-  USE_OR_MOVE_TO_WORKSPACE_6,
-  USE_OR_MOVE_TO_WORKSPACE_7,
-  USE_OR_MOVE_TO_WORKSPACE_8,
-  USE_OR_MOVE_TO_WORKSPACE_9,
-  USE_OR_MOVE_TO_WORKSPACE_0,
+enum workspace_codes {
+  WSPC_1,
+  WSPC_2,
+  WSPC_3,
+  WSPC_4,
+  WSPC_5,
+  WSPC_6,
+  WSPC_7,
+  WSPC_8,
+  WSPC_9,
+  WSPC_0,
 };
 
 #define QWERTY 0
@@ -103,7 +103,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                                     KC_MS_BTN1,     KC_MS_BTN2,     KC_NO,                                          KC_NO,          KC_NO,              KC_NO
   ),
   [BSPWM] = LAYOUT_moonlander(
-    ST_MACRO_0,     TD(USE_OR_MOVE_TO_WORKSPACE_1),   TD(USE_OR_MOVE_TO_WORKSPACE_2),   TD(USE_OR_MOVE_TO_WORKSPACE_3),   TD(USE_OR_MOVE_TO_WORKSPACE_4),   TD(USE_OR_MOVE_TO_WORKSPACE_5),   KC_TRANSPARENT,                                 KC_TRANSPARENT, TD(USE_OR_MOVE_TO_WORKSPACE_6),   TD(USE_OR_MOVE_TO_WORKSPACE_7),   TD(USE_OR_MOVE_TO_WORKSPACE_8),   TD(USE_OR_MOVE_TO_WORKSPACE_9),   TD(USE_OR_MOVE_TO_WORKSPACE_0),   KC_TRANSPARENT,
+    ST_MACRO_0,     TD(WSPC_1),     TD(WSPC_2),     TD(WSPC_3),     TD(WSPC_4),     TD(WSPC_5),     KC_TRANSPARENT,                                 KC_TRANSPARENT, TD(WSPC_6),     TD(WSPC_7),     TD(WSPC_8),     TD(WSPC_9),     TD(WSPC_0),     KC_TRANSPARENT,
     KC_TRANSPARENT, KC_NO,          KC_NO,          LCTL(KC_LGUI),  LALT(KC_LGUI),  KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_NO,
     KC_ESCAPE,      KC_NO,          KC_NO,          LSFT(KC_LGUI),  KC_LGUI,        KC_NO,          KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_H,           KC_J,           KC_K,           KC_L,           KC_NO,          KC_NO,
     KC_TRANSPARENT, ST_MACRO_1,     ST_MACRO_2,     ST_MACRO_3,     ST_MACRO_4,     KC_NO,                                                                          KC_NO,          KC_NO,          KC_NO,          KC_NO,          KC_TRANSPARENT, KC_TRANSPARENT,
@@ -716,14 +716,14 @@ void use_or_move_to_workspace_0_reset(qk_tap_dance_state_t *state, void *user_da
 }
 
 qk_tap_dance_action_t tap_dance_actions[] = {
-        [USE_OR_MOVE_TO_WORKSPACE_1] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_1, use_or_move_to_workspace_1_finished, use_or_move_to_workspace_1_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_2] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_2, use_or_move_to_workspace_2_finished, use_or_move_to_workspace_2_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_3] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_3, use_or_move_to_workspace_3_finished, use_or_move_to_workspace_3_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_4] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_4, use_or_move_to_workspace_4_finished, use_or_move_to_workspace_4_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_5] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_5, use_or_move_to_workspace_5_finished, use_or_move_to_workspace_5_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_6] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_6, use_or_move_to_workspace_6_finished, use_or_move_to_workspace_6_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_7] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_7, use_or_move_to_workspace_7_finished, use_or_move_to_workspace_7_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_8] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_8, use_or_move_to_workspace_8_finished, use_or_move_to_workspace_8_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_9] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_9, use_or_move_to_workspace_9_finished, use_or_move_to_workspace_9_reset),
-        [USE_OR_MOVE_TO_WORKSPACE_0] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_0, use_or_move_to_workspace_0_finished, use_or_move_to_workspace_0_reset),
+    [WSPC_1] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_1, use_or_move_to_workspace_1_finished, use_or_move_to_workspace_1_reset),
+    [WSPC_2] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_2, use_or_move_to_workspace_2_finished, use_or_move_to_workspace_2_reset),
+    [WSPC_3] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_3, use_or_move_to_workspace_3_finished, use_or_move_to_workspace_3_reset),
+    [WSPC_4] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_4, use_or_move_to_workspace_4_finished, use_or_move_to_workspace_4_reset),
+    [WSPC_5] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_5, use_or_move_to_workspace_5_finished, use_or_move_to_workspace_5_reset),
+    [WSPC_6] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_6, use_or_move_to_workspace_6_finished, use_or_move_to_workspace_6_reset),
+    [WSPC_7] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_7, use_or_move_to_workspace_7_finished, use_or_move_to_workspace_7_reset),
+    [WSPC_8] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_8, use_or_move_to_workspace_8_finished, use_or_move_to_workspace_8_reset),
+    [WSPC_9] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_9, use_or_move_to_workspace_9_finished, use_or_move_to_workspace_9_reset),
+    [WSPC_0] = ACTION_TAP_DANCE_FN_ADVANCED(on_use_or_move_to_workspace_0, use_or_move_to_workspace_0_finished, use_or_move_to_workspace_0_reset),
 };
