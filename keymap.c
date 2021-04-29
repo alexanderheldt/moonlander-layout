@@ -331,8 +331,7 @@ void use_or_move_to_workspace_2_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_11_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_2)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_2))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_2)); register_code16(LGUI(KC_2)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_2))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_2)); register_code16(LGUI(KC_2));
     }
 }
@@ -378,8 +377,7 @@ void use_or_move_to_workspace_3_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_12_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_3)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_3))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_3)); register_code16(LGUI(KC_3)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_3))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_3)); register_code16(LGUI(KC_3));
     }
 }
@@ -425,8 +423,7 @@ void use_or_move_to_workspace_4_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_13_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_4)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_4))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_4)); register_code16(LGUI(KC_4)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_4))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_4)); register_code16(LGUI(KC_4));
     }
 }
@@ -472,8 +469,7 @@ void use_or_move_to_workspace_5_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_14_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_5)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_5))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_5)); register_code16(LGUI(KC_5)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_5))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_5)); register_code16(LGUI(KC_5));
     }
 }
@@ -519,8 +515,7 @@ void use_or_move_to_workspace_6_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_15_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_6)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_6))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_6)); register_code16(LGUI(KC_6)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_6))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_6)); register_code16(LGUI(KC_6));
     }
 }
@@ -566,8 +561,7 @@ void use_or_move_to_workspace_7_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_16_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_7)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_7))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_7)); register_code16(LGUI(KC_7)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_7))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_7)); register_code16(LGUI(KC_7));
     }
 }
@@ -613,8 +607,7 @@ void use_or_move_to_workspace_8_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_17_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_8)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_8))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_8)); register_code16(LGUI(KC_8)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_8))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_8)); register_code16(LGUI(KC_8));
     }
 }
@@ -660,8 +653,7 @@ void use_or_move_to_workspace_9_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_18_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_9)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_9))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_9)); register_code16(LGUI(KC_9)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_9))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_9)); register_code16(LGUI(KC_9));
     }
 }
@@ -707,8 +699,7 @@ void use_or_move_to_workspace_0_finished(qk_tap_dance_state_t *state, void *user
     dance_state.step = dance_19_dance_step(state);
     switch (dance_state.step) {
         case SINGLE_TAP: register_code16(LGUI(KC_0)); break;
-        case SINGLE_HOLD: register_code16(LGUI(LSFT(KC_0))); break;
-        case DOUBLE_TAP: register_code16(LGUI(KC_0)); register_code16(LGUI(KC_0)); break;
+        case DOUBLE_TAP: register_code16(LGUI(LSFT(KC_0))); break;
         case DOUBLE_SINGLE_TAP: tap_code16(LGUI(KC_0)); register_code16(LGUI(KC_0));
     }
 }
